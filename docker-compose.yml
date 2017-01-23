@@ -1,0 +1,25 @@
+version: '2'
+
+services:
+
+### Workspace Utilities Container ###########################
+
+    lemp:
+        build:
+            context: ./
+            args:
+            - TZ=Asia/Taipei
+#        volumes_from:
+        volumes:
+           - ./sites:/etc/nginx/sites-enabled 
+           - ./www:/var/www/
+#           - ./mongodb:/var/lib/mongodb
+#           - ./data/mysql:/var/lib/mysql
+        ports:
+           - "80:80"
+           - "8000:8000"
+           - "50022:22"
+           - "27017:27017"
+           - "3306:3306"
+        tty: true
+#        restart: always
