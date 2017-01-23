@@ -140,7 +140,6 @@ class producerController extends Controller
             return response()->json(['status' => 201, 'msg' => 'channel id not exist']);
         }
         
-        $channel->items
         if($channel->delete() === TRUE)
         {
             return response()->json(['status' => 200, 'msg' => 'Success']);

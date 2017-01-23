@@ -16,6 +16,6 @@
     "vue-resource": "^1.0.3"
   },
   "scripts": {
-    "init" : "composer update;mysql --user=root --password=root --execute=\"CREATE DATABASE IF NOT EXISTS xmight\";php artisan migrate;"
+    "init" : "composer install;mysql --user=root --password=root --execute=\"CREATE DATABASE IF NOT EXISTS xmight\";php artisan migrate;"
   }
 }
