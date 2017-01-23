@@ -7,7 +7,7 @@ $ docker-compose exec --user=dock lemp bash
 lara$ cd /var/www/house;npm run init;ch /var/www/dashboard;npm run init; #約需要20分鐘
 lara$ exit
 $ sudo -s
-bash$ (echo "127.0.0.1 house.dev";echo "127.0.0.1 dashboard.dev") >> /etc/hosts```
+bash$ (echo "127.0.0.1 house.dev";echo "127.0.0.1 dashboard.dev") >> /etc/hosts
 bash$ exit
 ```
 
