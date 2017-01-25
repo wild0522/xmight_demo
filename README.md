@@ -4,10 +4,10 @@ $ git clone https://github.com/wild0522/xmight_demo.git
 $ cd xmight_demo
 $ docker-compose up -d
 $ docker-compose exec --user=dock lemp bash
-lara$ cd /var/www/house;npm run init;ch /var/www/dashboard;npm run init; #約需要20分鐘
-lara$ exit
+dock$ cd /var/www/house;npm run init;ch /var/www/dashboard;npm run init; #約需要20分鐘
+dock$ exit
 $ sudo -s
-bash$ (echo "127.0.0.1 house.dev";echo "127.0.0.1 dashboard.dev") >> /etc/hosts```
+bash$ (echo "127.0.0.1 house.dev";echo "127.0.0.1 dashboard.dev") >> /etc/hosts
 bash$ exit
 ```
 - 速度太慢可使用此指令最佳化(in container)
@@ -18,7 +18,7 @@ lara$ cd /var/www/house;npm run faster;ch /var/www/dashboard;npm run faster;
 ## Demo 操作
 - 瀏覽器 house.dev
   1. 瀏覽器登入 http://house.dev 註冊身份
-  1. 點擊 Click me! 連結，會導向 dashboard，並註冊 Api token
+  1. 點擊 Click me! 連結，會導向 http://dashboard.dev ，並註冊 Api token
 - 瀏覽器 dashboard.dev
   1. 建立 channel， ex. ch1, ch2
   1. 點擊 Random (隨機產 item data + 顯示 channel 線圖)
