@@ -10,6 +10,10 @@ $ sudo -s
 bash$ (echo "127.0.0.1 house.dev";echo "127.0.0.1 dashboard.dev") >> /etc/hosts```
 bash$ exit
 ```
+- 速度太慢可使用此指令最佳化(in container)
+```bash
+lara$ cd /var/www/house;npm run faster;ch /var/www/dashboard;npm run faster;
+```
 
 ## Demo 操作
 - 瀏覽器 house.dev

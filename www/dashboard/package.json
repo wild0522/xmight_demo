@@ -16,6 +16,7 @@
     "vue-resource": "^1.0.3"
   },
   "scripts": {
-    "init" : "composer install;"
+    "init" : "composer install;",
+    "faster" : "php artisan optimize;php artisan config:cache;"
   }
 }
